@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navigation-links">
+          <img src="images/Unknown.jpeg" alt="Logo" width="89px" class="logo" />
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Target and Indicators</a></li>
+          <li><a href="#">Progress and Information</a></li>
+          <li><a href="sitemapdemo.html">SiteMap</a></li>
+          <li><a href="userProfile.html">Members</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <button class="sign-in" onclick="window.location.href='login.html'">
+              Sign-in
+            </button>
+          </li>
+        </ul>
+    </nav>
+
+    <div class="feedback-container">
+        <h1>Feedback Form</h1>
+        <form id="feedback-form">
+            <!-- Personal Details Section -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required title="Please enter your full name.">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required title="Please enter a valid email address.">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telephone Number:</label>
+                    <input type="tel" id="phone" name="phone" required title="Please enter a valid phone number.">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" required title="Please enter your address."></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Feedback Details Section -->
+            <fieldset>
+                <legend>Feedback Details</legend>
+                <div class="form-group">
+                    <label for="comment">Comment or Message:</label>
+                    <textarea id="comment" name="comment" maxlength="500" required title="Please enter your feedback."></textarea>
+                    <div class="char-counter">Characters remaining: <span id="char-count">500</span></div>
+                </div>
+                <div class="form-group">
+                    <label>How did you hear about us?</label>
+                    <select id="hear-about" name="hear-about">
+                        <option value="social-media">Social Media</option>
+                        <option value="friend">Friend</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>What topics are you interested in? (Select multiple)</label>
+                    <select id="topics" name="topics" multiple>
+                        <option value="technology">Technology</option>
+                        <option value="education">Education</option>
+                        <option value="health">Health</option>
+                        <option value="environment">Environment</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Contact Method:</label>
+                    <div>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                        <label for="contact-email">Email</label>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date for Follow-up:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="file">Upload Attachment:</label>
+                    <input type="file" id="file" name="file">
+                </div>
+                <div class="form-group">
+                    <label>Rate Your Experience:</label>
+                    <div class="rating">
+                        <span data-value="1">&#128577;</span>
+                        <span data-value="2">&#128528;</span>
+                        <span data-value="3">&#128578;</span>
+                        <span data-value="4">&#128522;</span>
+                        <span data-value="5">&#128516;</span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-icons">
+          <img
+            src="images/icons8-facebook-logo-48.png"
+            alt="Facebook"
+            class="icon"
+          />
+          <img
+            src="images/icons8-instagram-logo-48.png"
+            alt="Instagram"
+            class="icon"
+          />
+          <img src="images/icons8-twitter-100.png" alt="Twitter" class="icon" />
+          <img
+            src="images/icons8-whatsapp-logo-48.png"
+            alt="WhatsApp"
+            class="icon"
+          />
+          <img src="images/icons8-tiktok-48.png" alt="TikTok" class="icon" />
+        </div>
+        <div class="contact">
+          <h3>Contact: 011-2738618 / 077-5948444</h3>
+        </div>
+        <hr class="hr-tag" />
+        <div class="infor">
+          <p>Contact</p>
+          <p>Copyright</p>
+          <p>Fraud Alert</p>
+          <p>Privacy Notice</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        const commentField = document.getElementById('comment');
+        const charCount = document.getElementById('char-count');
+        commentField.addEventListener('input', () => {
+            const remaining = 500 - commentField.value.length;
+            charCount.textContent = remaining;
+        });
+    </script>
+</body>
+</html>

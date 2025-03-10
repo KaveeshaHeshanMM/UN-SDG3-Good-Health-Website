@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Editor Student - provide your student name</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css" />
+    <!-- External CSS link -->
+  </head>
+  <body>
+    <nav>
+      <ul class="navigation-links">
+        <img src="Images/Unknown.jpeg" alt="Logo" width="89px" class="logo" />
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Target and Indicators</a></li>
+        <li><a href="#">Progress and Information</a></li>
+        <li><a href="sitemapdemo.html">SiteMap</a></li>
+        <li><a href="userProfile.html">Members</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <button class="sign-in" onclick="window.location.href='login.html'">
+            Sign-in
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <section class="stud">
+      <h2>G.M.K.T. Thaksara, student 4</h2>
+    </section>
+
+    <div class="container">
+      <!-- Main content area -->
+      <main>
+        <!-- Update those first three sections for the pages you were responsible to implement -->
+
+        <section>
+          <h2 id="splash">Profile Page</h2>
+          <h3>Technical Description</h3>
+          <p>
+            The User Profile page combines HTML, CSS, and JavaScript to create
+            an attractive and interactive profile page. The HTML organizes
+            content into clear sections using navigation, header, and multiple
+            container elements to separate different types of profile
+            information. The CSS styling creates a dark-themed design that's
+            easy to read, with light text on dark backgrounds and highlighted
+            accent colors for important elements. The profile information is
+            neatly centered on the page within a container that stands out from
+            the background. Subtle animations make the page feel dynamic when it
+            loads. Interactive elements change appearance when users hover over
+            them, providing visual feedback. The navigation menu uses flexible
+            spacing to arrange items evenly across the top of the page. The
+            JavaScript adds functionality to the volunteer scheduling feature,
+            displaying time slot options when a date is selected and capturing
+            the user's choice when they click a specific time.
+          </p>
+
+          <h3>Accessibility</h3>
+          <p>
+            This profile page lacks important accessibility features that would
+            help all users access its content. The page needs proper color
+            contrast - the yellow sign-in button on dark background might be
+            hard to see for some people. Missing alt text on social media icons
+            prevents screen readers from describing these elements. The form
+            fields don't have proper labels connected to inputs, making them
+            difficult for assistive technology users. The page lacks proper
+            heading structure and keyboard navigation support. Time slot
+            selection relies only on visual cues with no keyboard accessibility.
+            Adding ARIA labels, improving color contrast, and ensuring keyboard
+            navigation would make this page more accessible to everyone.
+          </p>
+
+          <h3>Link to the validation page</h3>
+          <!-- Update the path to link the Page Editor with the splash page -->
+          <p>
+            <a href="validation_ST0.html#splashVal"
+              >link to the validation page</a
+            >
+          </p>
+          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+          <h3>Link to the page</h3>
+          <p>
+            <a href="userProfile.html">link to the actual page you describe.</a>
+          </p>
+        </section>
+
+        <section>
+          <h2 id="volunteer">Volunteer Page</h2>
+          <h3>Technical Description</h3>
+          <p>
+            This sitemap page uses SVG (Scalable Vector Graphics) to create an
+            interactive visual representation of the website structure. The HTML
+            file contains an SVG element that serves as a canvas where the
+            sitemap is drawn using shapes and lines. The sitemap design shows
+            site navigation with rectangular boxes representing different
+            website pages, connected by lines with arrows showing relationships
+            between pages. Each box is made clickable by wrapping it in an
+            anchor tag, allowing users to navigate directly to that page. The
+            CSS styling makes the sitemap both attractive and interactive. When
+            users hover over a page box, it changes color and slightly enlarges,
+            providing visual feedback. The connecting lines feature animated
+            drawing effects created using stroke-dasharray and stroke-dashoffset
+            properties, making them appear to draw themselves when the page
+            loads. Text labels inside each box identify the page name, with
+            styling that ensures readability against the background. The
+            animations for both boxes and text create a staggered entrance
+            effect, with boxes appearing first followed by their labels, giving
+            the sitemap a dynamic feel when loaded. The responsive design
+            ensures the sitemap displays properly across different screen sizes
+            by using relative measurements.
+          </p>
+
+          <h3>Accessibility</h3>
+          <p>
+            The sitemap page has several accessibility issues that need to be
+            addressed. Currently, it lacks proper text alternatives for the SVG
+            elements, making it difficult for screen reader users to understand
+            the website structure. The page should include ARIA labels or
+            descriptions for the SVG elements and proper alt text for
+            interactive elements. The color contrast between text and background
+            should be improved to meet accessibility standards. Additionally,
+            keyboard navigation support is missing - users should be able to tab
+            through the sitemap nodes. The page also needs semantic HTML
+            elements to provide structure and context for assistive
+            technologies, rather than relying solely on visual presentation
+            through the graphic elements.
+          </p>
+
+          <h3>Link to the validation page</h3>
+          <!-- Update the path to link the Page Editor with the splash page -->
+          <p>
+            <a href="validation_ST0.html#volunteerVal"
+              >link to the validation page</a
+            >
+          </p>
+          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+          <h3>Link to the page</h3>
+          <p>
+            <a href="sitemapdemo.html">link to the actual page you describe.</a>
+          </p>
+        </section>
+
+        <section>
+          <h2 id="content">Content Page</h2>
+          <h3>Technical Description</h3>
+          <p>
+            This fitness-focused webpage combines structure and styling to
+            create an engaging user experience. The page is built with a dark
+            theme using a black background with yellow accent colors for
+            contrast and visual appeal. The structure uses semantic HTML tags
+            including navigation bars, content sections, and a footer. The main
+            navigation at the top remains fixed as users scroll, while a
+            secondary internal navigation provides quick links to related
+            content. CSS styling creates visual hierarchy with gradient
+            backgrounds, hover effects, and animations. Interactive elements
+            like buttons have subtle scaling effects when hovered, enhancing
+            user feedback. The page also implements responsive design principles
+            with percentage-based widths. JavaScript functionality powers the
+            "go to top" button, which appears only when users scroll down the
+            page. This button provides smooth scrolling back to the top through
+            the window.scrollTo method with "smooth" behavior parameter. The
+            combined techniques create a modern, responsive fitness resource
+            with intuitive navigation and visual engagement.
+          </p>
+
+          <h3>Accessibility</h3>
+          <p>
+            While the current implementation has some accessible elements like
+            semantic HTML structure and descriptive alt text for images, there
+            are several accessibility improvements needed. The page lacks proper
+            heading hierarchy, with only h1 and h2 elements used. Focus
+            indicators for keyboard navigation aren't clearly defined. Color
+            contrast between the yellow text and dark background should be
+            verified for readability. The page would benefit from ARIA landmarks
+            and labels to improve screen reader navigation. Interactive elements
+            like buttons need keyboard accessibility improvements. Adding skip
+            navigation links would help keyboard users bypass repetitive
+            content. These enhancements would make the fitness website more
+            accessible to users with disabilities.
+          </p>
+
+          <h3>Link to the validation page</h3>
+          <!-- Update the path to link the Page Editor with the splash page -->
+          <p>
+            <a href="validation_ST0.html#contentVal"
+              >link to the validation page</a
+            >
+          </p>
+          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+          <h3>Link to the page</h3>
+          <p>
+            <a href="content/contentstudent4.html"
+              >link to the actual page you describe.</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h2 id="challenge">Challenges and Lessons Learned</h2>
+          <p>
+            During development, I faced challenges with incorrect arrow mappings
+            on the sitemap and calendar features. These navigation elements
+            weren't properly connecting to their intended destinations, causing
+            user confusion. Through troubleshooting, I learned valuable
+            animation techniques that enhanced the visual feedback of the
+            interface. After identifying the mapping issues, I successfully
+            corrected the arrow connections, ensuring they properly linked to
+            the sitemap and calendar sections. This experience improved my
+            debugging skills and understanding of how navigation elements should
+            function cohesively within a website. The process taught me the
+            importance of testing interactive elements thoroughly before
+            deployment.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="compliance">Compliance</h2>
+          <p>
+            My website follows basic Janet rules for student web publishing.
+            I've used proper HTML structure with correct DOCTYPE and meta tags.
+            The navigation is clear with labeled links to help users find
+            information easily. For accessibility, I've added alt text to images
+            and created a readable layout, though I need to improve keyboard
+            navigation. The sitemap provides a visual guide to the website
+            structure with animated connections between pages. I've included a
+            Privacy Notice link in the footer to address data protection
+            requirements. The responsive design works on different screen sizes
+            by using flexible layouts and percentages instead of fixed widths.
+            While I've made a good start with these compliance elements, I
+            recognize there are areas to improve, particularly with keyboard
+            accessibility and WCAG standards, which I will continue to develop
+            as I learn more.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="ref">References</h2>
+          <ul class="ref">
+            <li>
+              iStock (2025) <i>iStock.</i> Available at:
+              <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11
+              Feb 2025).
+            </li>
+            <li>
+              McFarland, D.S. (2021)
+              <i>Web Design & Development: A Full-Stack Approach.</i> Available
+              at: <a href="#">https://www.pearson.com/</a> (Last accessed: 10
+              Mar 2025).
+            </li>
+
+            <li>
+              Robbins, J.N. (2018)
+              <i
+                >Learning Web Design: A Beginner's Guide to HTML, CSS,
+                JavaScript, and Web Graphics.</i
+              >
+              Available at: <a href="#">https://www.oreilly.com/</a> (Last
+              accessed: 10 Mar 2025).
+            </li>
+
+            <li>
+              Duckett, J. (2011)
+              <i>HTML & CSS: Design and Build Websites.</i> Available at:
+              <a href="#">https://www.wiley.com/</a> (Last accessed: 10 Mar
+              2025).
+            </li>
+
+            <li>
+              Brown, A. (2020)
+              <i>Trends in modern web development: UX and performance.</i>
+              Available at:
+              <a href="#">https://www.journalofwebengineering.com/</a> (Last
+              accessed: 10 Mar 2025).
+            </li>
+
+            <li>
+              Mozilla Developer Network (MDN) (2023)
+              <i>HTML & CSS Basics.</i> Available at:
+              <a href="#">https://developer.mozilla.org/en-US/docs/Learn</a>
+              (Last accessed: 10 Mar 2025).
+            </li>
+
+            <li>
+              W3Schools (2025) <i>Web Development Tutorial.</i> Available at:
+              <a href="#">https://www.w3schools.com/</a> (Last accessed: 10 Mar
+              2025).
+            </li>
+
+            <li>
+              Smashing Magazine (2024)
+              <i>Best practices for UI/UX in web development.</i> Available at:
+              <a href="#">https://www.smashingmagazine.com/</a> (Last accessed:
+              10 Mar 2025).
+            </li>
+          </ul>
+        </section>
+
+        <p class="top"><a href="#top">Go top</a></p>
+      </main>
+
+      <!-- Sidebar area -->
+      <aside>
+        <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+        <ul class="top-level-ul">
+          <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+          <li>Student 1</li>
+          <ul>
+            <li><a href="#splash">Splash page</a></li>
+            <li><a href="#volunteer">Volunteer page</a></li>
+            <li><a href="#content">Content page</a></li>
+          </ul>
+          <li>Student 2</li>
+          <ul>
+            <li><a href="#">Home page </a></li>
+            <li><a href="#">Table page</a></li>
+            <li><a href="#">Content page</a></li>
+          </ul>
+          <li>Student 3</li>
+          <ul>
+            <li><a href="#">Feedback page</a></li>
+            <li><a href="#">Team page</a></li>
+            <li><a href="#">Content page</a></li>
+          </ul>
+          <li>Student 4</li>
+          <ul>
+            <li><a href="#">Profile page </a></li>
+            <li><a href="#">Sitemap page</a></li>
+            <li><a href="pageEditor_ST0.html#">Content page</a></li>
+          </ul>
+          <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+          <li><a href="#compliance">Compliance</a></li>
+          <li><a href="#ref">References</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-icons">
+        <img
+          src="Icons/icons8-facebook-logo-48.png"
+          alt="Facebook"
+          class="icon"
+        />
+        <img
+          src="Icons/icons8-instagram-logo-48.png"
+          alt="Instagram"
+          class="icon"
+        />
+        <img src="Icons/icons8-twitter-100.png" alt="Twitter" class="icon" />
+        <img
+          src="Icons/icons8-whatsapp-logo-48.png"
+          alt="WhatsApp"
+          class="icon"
+        />
+        <img src="Icons/icons8-tiktok-48.png" alt="TikTok" class="icon" />
+      </div>
+      <div class="editorLink">
+        <h4 class="editornames">Editors</h4>
+        <a href="../../templates/page_editors/student_1/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 1</a
+        >
+        <a href="../../templates/page_editors/student_2/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 2</a
+        >
+        <a href="../../templates/page_editors/student_3/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 3</a
+        >
+        <a href="../../templates/page_editors/student_4/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 4</a
+        >
+      </div>
+      <div class="contact">
+        <h3>Contact: 011-2738618 / 077-5948444</h3>
+      </div>
+      <hr class="hr-tag" />
+      <div class="infor">
+        <p>Contact</p>
+        <p>Copyright</p>
+        <p>Fraud Alert</p>
+        <p>Privacy Notice</p>
+      </div>
+    </footer>
+  </body>
+</html>

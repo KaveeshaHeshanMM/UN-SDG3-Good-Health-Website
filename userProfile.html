@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="userProfile.css" />
+    <script src="userprofile.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul class="navigation-links">
+        <li>
+          <img src="Images/Unknown.jpeg" alt="Logo" width="89" class="logo" />
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Target and Indicators</a></li>
+        <li><a href="#">Progress and Information</a></li>
+        <li><a href="sitemapdemo.html">SiteMap</a></li>
+        <li><a href="userProfile.html">Members</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <button class="sign-in" onclick="window.location.href='login.html'">
+            Sign-in
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <h1>User Profile</h1>
+    </header>
+    <div class="profile-container">
+      <img src="Images/member1.jpg" alt="User Avatar" class="avatar" />
+      <h2>Alex Frendo</h2>
+      <p>Web Developer | Front End Developer</p>
+
+      <div class="info-section">
+        <h3>About Me</h3>
+        <p>Age - 18 Years</p>
+        <p>Work - Student</p>
+        <p>Country - Sri lanka</p>
+      </div>
+
+      <div class="info-section">
+        <h3>Skills</h3>
+        <ul class="skills">
+          <li>Web Development</li>
+          <li>UI/UX Design</li>
+          <li>Backend Development</li>
+          <li>Cloud Computing</li>
+        </ul>
+      </div>
+
+      <div class="info-section">
+        <h3>Contact Me</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="submit">Send</button>
+          <p></p>
+        </form>
+      </div>
+      <div class="shortBio">
+        <h3>Short Bio</h3>
+        <p class="shortBioDetails">
+          Passionate web developer and tech enthusiast with a love for
+          innovation. I enjoy building user-friendly applications and exploring
+          new technologies. Currently focusing on full-stack development, cloud
+          computing, and AI integration. Always eager to learn, collaborate, and
+          make a positive impact through technology.
+        </p>
+      </div>
+      <div class="goals">
+        <h3>Goals</h3>
+        <ul class="goalsDetails">
+          <li>Master full-stack development</li>
+          <li>Contribute to open-source projects Build</li>
+          <li>an AI-powered web app Get certified in cloud computing</li>
+          <li>Speak at a tech conference</li>
+        </ul>
+        <p></p>
+      </div>
+      <div class="experience">
+        <h3>Experience</h3>
+        <div class="experienceDetails">
+          <p>Intern at XYZ Tech - Developed a responsive website</p>
+          <p>
+            Freelance Developer - Built e-commerce platforms for small
+            businesses
+          </p>
+          <p>Hackathon Participant - Worked on an AI-powered chatbot</p>
+          <p>Volunteer at CodeCamp - Taught coding basics to students</p>
+        </div>
+      </div>
+      <div class="Frustrations">
+        <h3>Frustrations</h3>
+        <div class="frustrationsDetails">
+          <p>Debugging complex code that works inconsistently</p>
+          <p>Keeping up with rapid tech changes and new trends</p>
+          <p>
+            Finding the right work-life balance while learning and working on
+            projects
+          </p>
+          <p>Cross-browser compatibility issues in web development</p>
+          <p>Slow or inefficient teamwork in collaborative projects</p>
+        </div>
+      </div>
+      <div class="volunteerAvailability">
+        <h3>Volunteer Availability</h3>
+
+        <div class="date">
+          <label for="visit-date">Date of Visit:</label>
+          <input type="date" id="visit-date" name="visit-date" />
+        </div>
+
+        <!-- Time Slots -->
+        <div id="time-slots" class="time-slots" style="display: none">
+          <h3>Available Time Slots</h3>
+          <button class="time-slot">7:00 AM</button>
+          <button class="time-slot">10:00 AM</button>
+          <button class="time-slot">11:00 AM</button>
+          <button class="time-slot">12:00 PM</button>
+          <button class="time-slot">1:00 PM</button>
+          <button class="time-slot">2:00 PM</button>
+        </div>
+        <p></p>
+      </div>
+      <div class="supportHabit">
+        <h3>Support Habits</h3>
+        <img src="Images/habit1.jpg" alt="habits" width="50" height="50" />
+        <img src="Images/habit2.jpg" alt="habits" width="50" height="50" />
+        <img src="Images/habit3.jpg" alt="habits" width="50" height="50" />
+        <img src="Images/habit4.jpg" alt="habits" width="50" height="50" />
+        <img src="Images/habit5.jpg" alt="habits" width="50" height="50" />
+        <p></p>
+      </div>
+      <div class="contact-section">
+        <h3>Contact Me</h3>
+        <table>
+          <tr>
+            <td>Email:</td>
+            <td>
+              <a href="#">alexfrendo@gamil.com</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Phone:</td>
+            <td>+94 78-365-965</td>
+          </tr>
+          <tr>
+            <td>Office Address:</td>
+            <td>123 Main Street, Kaluboliwa</td>
+          </tr>
+          <tr>
+            <td>LinkedIn:</td>
+            <td>
+              <a href="#">linkedin.com/in/Alexfrendo</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Twitter:</td>
+            <td><a href="#">@Alex200</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <button id="go-to-top" onclick="scrollToTop()">↑</button>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-icons">
+        <img
+          src="Icons/icons8-facebook-logo-48.png"
+          alt="Facebook"
+          class="icon"
+        />
+        <img
+          src="Icons/icons8-instagram-logo-48.png"
+          alt="Instagram"
+          class="icon"
+        />
+        <img src="Icons/icons8-twitter-100.png" alt="Twitter" class="icon" />
+        <img
+          src="Icons/icons8-whatsapp-logo-48.png"
+          alt="WhatsApp"
+          class="icon"
+        />
+        <img src="Icons/icons8-tiktok-48.png" alt="TikTok" class="icon" />
+      </div>
+      <div class="editorLink">
+        <h4 class="editornames">Editors</h4>
+        <a href="../../templates/page_editors/student_1/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 1</a
+        >
+        <a href="../../templates/page_editors/student_2/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 2</a
+        >
+        <a href="../../templates/page_editors/student_3/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 3</a
+        >
+        <a href="../../templates/page_editors/student_4/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 4</a
+        >
+      </div>
+      <div class="contact">
+        <h3>Contact: 011-2738618 / 077-5948444</h3>
+      </div>
+      <hr class="hr-tag" />
+      <div class="infor">
+        <p>Contact</p>
+        <p>Copyright</p>
+        <p>Fraud Alert</p>
+        <p>Privacy Notice</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+body {
+  background-color: #121212;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 3%;
+}
+
+h1 {
+  color: rgb(0, 0, 206);
+  margin-left: 380px;
+}
+
+p {
+  margin-left: 380px;
+}
+
+p:hover {
+  cursor: pointer;
+  color: rgb(96, 96, 96);
+}
+
+.box1 {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.img-about {
+  margin-left: 10px;
+  float: left;
+  margin-top: 10px;
+  width: 350px;
+}
+
+.img-about2 {
+  height: 250px;
+}
+
+.img-about3 {
+  width: 300px;
+}
+
+.box2 {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.box3 {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  padding: 20px 5%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-icons img {
+  width: 32px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.2);
+}
+
+.hr-tag {
+  border: 1px solid #444;
+  margin: 20px 0;
+}
+
+.infor {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+.infor p {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.infor p:hover {
+  color: #ffcc00;
+}
+
+/* Navigation Bar */
+.navigation-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navigation-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navigation-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navigation-links a:hover {
+  color: #ffcc00;
+}
+
+.sign-in {
+  background-color: #ffcc00;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sign-in:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 89px;
+  height: auto;
+}
+
+.contact h3 {
+  color: #fff;
+}
+
+.infor p {
+  color: #fff;
+  margin: 0;
+}
+
+.editorLink {
+  flex: 1;
+  color: #fff;
+  flex-direction: column;
+  gap: 15px;
+  gap: 8px;
+  font-size: 0.95em;
+}
+
+.editorLink a {
+  color: #444;
+  text-decoration: none;
+  margin-left: 5px;
+  gap: 8px;
+  font-size: 0.95em;
+}
+
+.editorLink a:hover {
+  color: #fff;
+}

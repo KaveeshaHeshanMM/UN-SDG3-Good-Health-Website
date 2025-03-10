@@ -1,0 +1,298 @@
+/* navigation bar*/
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+}
+
+/* Navigation Bar */
+.navigation-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navigation-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navigation-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navigation-links a:hover {
+  color: #ffcc00;
+}
+
+.sign-in {
+  background-color: #ffcc00;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sign-in:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 89px;
+  height: auto;
+}
+
+/* Add title*/
+
+.div-title {
+  position: relative;
+  top: 40px;
+}
+.title {
+  color: white;
+  font-size: 48px;
+}
+
+/* About section*/
+
+.img-2 {
+  width: 516px;
+  height: 290px;
+  border-radius: 20px;
+  float: left;
+  margin-right: 40px;
+}
+
+.img2-text {
+  position: relative;
+  top: 60px;
+}
+
+.line-h1 {
+  color: white;
+}
+
+.phara {
+  color: white;
+  line-height: 1.5;
+}
+
+.learnmore-btn {
+  color: black;
+  font-weight: bold;
+  width: 105px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(253, 253, 127);
+  transition: transform 0.3s ease-in-out;
+}
+
+.learnmore-btn:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+.event-text {
+  color: white;
+  font-size: 40px;
+}
+
+.event-org {
+  margin-top: 10%;
+}
+
+/* Ensure cards are responsive */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Add spacing */
+}
+.card1 {
+  background-color: white;
+  width: 100%; /* Make it responsive */
+  max-width: 280px; /* Limit max width */
+  border-radius: 10px;
+  padding-bottom: 10px;
+  margin: 40px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better design */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card1:hover {
+  cursor: pointer;
+  opacity: 90%;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.card1-img {
+  width: 100%; /* Make image fit */
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card1 h2,
+.card1 h3,
+.card1 h4,
+.card1 h5,
+.card1 .more {
+  /* Fixed selector */
+  margin: 10px 10px;
+}
+
+.card1 h3 {
+  font-weight: lighter;
+  opacity: 70%;
+}
+
+.card1 h4 {
+  color: rgb(0, 0, 182);
+}
+
+/* Center the More button properly */
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Button styling */
+.more {
+  color: black;
+  background-color: rgb(255, 225, 1);
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 35px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.more:hover {
+  cursor: pointer;
+  background-color: rgb(230, 211, 67);
+}
+
+.img-news {
+  width: 49%;
+}
+
+.news img {
+  transition: 0.2s;
+}
+.news img:hover {
+  cursor: pointer;
+  opacity: 30%;
+  position: relative;
+}
+
+.boxers {
+  margin-top: 5%;
+}
+
+.habits-text {
+  color: white;
+  font-size: 40px;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  padding: 20px 5%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-icons img {
+  width: 32px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.2);
+}
+
+.hr-tag {
+  border: 1px solid #444;
+  margin: 20px 0;
+}
+
+.infor {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+.infor p {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.infor p:hover {
+  color: #ffcc00;
+}
+
+.contact h3 {
+  color: #fff;
+}
+
+.infor p {
+  color: #fff;
+}
+
+.editorLink {
+  flex: 1;
+  color: #fff;
+  flex-direction: column;
+  gap: 15px;
+  gap: 8px;
+  font-size: 0.95em;
+}
+
+.editorLink a {
+  color: #444;
+  text-decoration: none;
+  margin-left: 5px;
+  gap: 8px;
+  font-size: 0.95em;
+}
+
+.editorLink a:hover {
+  color: #fff;
+}
+
+.editorLink {
+  flex: 1;
+  color: #fff;
+  flex-direction: column;
+  gap: 15px;
+  gap: 8px;
+  font-size: 0.95em;
+}
+
+.editorLink a {
+  color: #444;
+  text-decoration: none;
+  margin-left: 5px;
+  gap: 8px;
+  font-size: 0.95em;
+}
+
+.editorLink a:hover {
+  color: #fff;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitemap</title>
+    <link rel="stylesheet" href="sitemapdemo.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="navigation-links">
+        <li><img src="Images/Unknown.jpeg" alt="Logo" class="logo" /></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="newvolunteer.html">Volunteer</a></li>
+        <li><a href="userProfile.html">Profile</a></li>
+        <li><a href="sitemapdemo.html">SiteMap</a></li>
+        <li><a href="userProfile.html">Members</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <button class="sign-in" onclick="window.location.href='login.html'">
+            Sign-in
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <svg viewBox="0 0 1000 550">
+      <defs>
+        <marker
+          id="arrow"
+          markerWidth="10"
+          markerHeight="7"
+          refX="10"
+          refY="3.5"
+          orient="auto"
+        >
+          <polygon points="0 0, 10 3.5, 0 7" fill="#fff" />
+        </marker>
+      </defs>
+
+      <!-- Home Page -->
+      <a href="index.html">
+        <rect
+          class="node"
+          x="450"
+          y="50"
+          width="150"
+          height="50"
+          rx="10"
+          ry="10"
+        ></rect>
+        <text x="497" y="82">Home</text>
+      </a>
+
+      <!-- Main Sections -->
+      <a href="userProfile.html">
+        <rect
+          class="node"
+          x="100"
+          y="200"
+          width="150"
+          height="50"
+          rx="10"
+          ry="10"
+        ></rect>
+        <text x="140" y="230">Profile</text>
+      </a>
+      <a href="newvolunteer.html">
+        <rect
+          class="node"
+          x="350"
+          y="270"
+          width="150"
+          height="50"
+          rx="10"
+          ry="10"
+        ></rect>
+        <text x="380" y="300">Volunteer</text>
+      </a>
+      <a href="member.html">
+        <rect
+          class="node"
+          x="800"
+          y="200"
+          width="150"
+          height="50"
+          rx="10"
+          ry="10"
+        ></rect>
+        <text x="835" y="230">Members</text>
+      </a>
+
+      <!-- Sub-sections -->
+      <a href="sitemapdemo.html">
+        <rect
+          class="node"
+          x="100"
+          y="300"
+          width="150"
+          height="50"
+          rx="10"
+          ry="10"
+        ></rect>
+        <text x="115" y="330">Site Map</text>
+      </a>
+      <a href="login.html">
+        <rect
+          class="node"
+          x="550"
+          y="270"
+          width="150"
+          height="50"
+          rx="10"
+          ry="10"
+        ></rect>
+        <text x="589" y="300">Sign-in</text>
+      </a>
+      <a href="about.html">
+        <rect
+          class="node"
+          x="800"
+          y="300"
+          width="150"
+          height="50"
+          rx="10"
+          ry="10"
+        ></rect>
+        <text x="832" y="330">About</text>
+      </a>
+      <a href="feedback.html">
+        <rect
+          class="node"
+          x="450"
+          y="400"
+          width="150"
+          height="50"
+          rx="10"
+          ry="10"
+        ></rect>
+        <text x="485" y="430">feedback</text>
+      </a>
+
+      <!-- Connecting Straight Lines with Arrows -->
+      <line
+        x1="525"
+        y1="100"
+        x2="175"
+        y2="200"
+        stroke="#fff"
+        stroke-width="3"
+        marker-end="url(#arrow)"
+      />
+      <line
+        x1="525"
+        y1="100"
+        x2="425"
+        y2="270"
+        stroke="#fff"
+        stroke-width="3"
+        marker-end="url(#arrow)"
+      />
+      <line
+        x1="525"
+        y1="100"
+        x2="875"
+        y2="200"
+        stroke="#fff"
+        stroke-width="3"
+        marker-end="url(#arrow)"
+      />
+      <line
+        x1="525"
+        y1="100"
+        x2="175"
+        y2="300"
+        stroke="#fff"
+        stroke-width="3"
+        marker-end="url(#arrow)"
+      />
+      <line
+        x1="525"
+        y1="100"
+        x2="625"
+        y2="270"
+        stroke="#fff"
+        stroke-width="3"
+        marker-end="url(#arrow)"
+      />
+      <line
+        x1="525"
+        y1="100"
+        x2="875"
+        y2="300"
+        stroke="#fff"
+        stroke-width="3"
+        marker-end="url(#arrow)"
+      />
+      <line
+        x1="525"
+        y1="100"
+        x2="525"
+        y2="400"
+        stroke="#fff"
+        stroke-width="3"
+        marker-end="url(#arrow)"
+      />
+    </svg>
+    <footer class="footer">
+      <div class="footer-icons">
+        <img
+          src="Icons/icons8-facebook-logo-48.png"
+          alt="Facebook"
+          class="icon"
+        />
+        <img
+          src="Icons/icons8-instagram-logo-48.png"
+          alt="Instagram"
+          class="icon"
+        />
+        <img src="Icons/icons8-twitter-100.png" alt="Twitter" class="icon" />
+        <img
+          src="Icons/icons8-whatsapp-logo-48.png"
+          alt="WhatsApp"
+          class="icon"
+        />
+        <img src="Icons/icons8-tiktok-48.png" alt="TikTok" class="icon" />
+      </div>
+      <div class="editorLink">
+        <h4 class="editornames">Editors</h4>
+        <a href="../../templates/page_editors/student_1/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 1</a
+        >
+        <a href="../../templates/page_editors/student_2/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 2</a
+        >
+        <a href="../../templates/page_editors/student_3/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 3</a
+        >
+        <a href="../../templates/page_editors/student_4/pageEditor.html"
+          ><i class="fas fa-user-edit"></i> Editor Student 4</a
+        >
+      </div>
+      <div class="contact">
+        <h3>Contact: 011-2738618 / 077-5948444</h3>
+      </div>
+      <hr class="hr-tag" />
+      <div class="infor">
+        <p>Contact</p>
+        <p>Copyright</p>
+        <p>Fraud Alert</p>
+        <p>Privacy Notice</p>
+      </div>
+    </footer>
+  </body>
+</html>
